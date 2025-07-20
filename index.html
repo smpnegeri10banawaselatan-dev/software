@@ -72,33 +72,7 @@
       </div>
     </div>
 
-    <h3 class="font-semibold mb-2">Fungsi utama software sistem adalah?</h3>
-        <ul class="list-disc ml-5">
-          <li>Menggambar</li>
-          <li>Menjalankan komputer dan perangkat keras</li>
-          <li>Menonton video</li>
-        </ul>
-      </div>
-    </div>
-    <h3 class="font-semibold mb-2">Sistem operasi termasuk dalam jenis software?</h3>
-        <ul class="list-disc ml-5">
-          <li>Aplikasi</li>
-          <li>Game</li>
-          <li>Sistem</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3 class="font-semibold mb-2">Contoh Software Sistem:</h3>
-        <ul class="list-disc ml-5">
-          <li>Windows 10</li>
-          <li>Linux Ubuntu</li>
-          <li>macOS</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Kumpulan Video dalam Kotak -->
+       <!-- Kumpulan Video dalam Kotak -->
     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
       <div class="bg-white rounded shadow p-4">
         <h3 class="font-semibold mb-2">Video 1: Pengertian Software</h3>
@@ -167,6 +141,33 @@
         </div>
       </div>
 
+      <div>
+        <label class="block font-semibold mb-1">3. Software yang digunakan untuk mengetik dokumen adalah?</label>
+        <div class="space-y-1">
+          <label><input type="radio" name="q3" value="a" /> a. Adobe Photoshop</label><br />
+          <label><input type="radio" name="q3" value="b" /> b. Microsoft Word</label><br />
+          <label><input type="radio" name="q3" value="c" /> c. Google Chrome</label>
+        </div>
+      </div>
+
+     <div>
+        <label class="block font-semibold mb-1">4. Sistem operasi termasuk dalam jenis software?</label>
+        <div class="space-y-1">
+          <label><input type="radio" name="q4" value="a" /> a. Aplikasi</label><br />
+          <label><input type="radio" name="q4" value="b" /> b. Game</label><br />
+          <label><input type="radio" name="q4" value="c" /> c. Sistem</label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-semibold mb-1">5. Fungsi utama software sistem adalah?</label>
+        <div class="space-y-1">
+          <label><input type="radio" name="q5" value="a" /> a. Menggambar</label><br />
+          <label><input type="radio" name="q5" value="b" /> b. Menjalankan komputer dan perangkat keras</label><br />
+          <label><input type="radio" name="q5" value="c" /> c. Menonton video</label>
+        </div>
+      </div>
+
       <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Cek Jawaban</button>
     </form>
 
@@ -179,9 +180,11 @@
 
       const answers = {
         q1: "b",
-        q2: "c"
+        q2: "c",
         q3: "b",
-        q4: "c"
+        q4: "c",
+        q5: "b"
+
       };
       let score = 0;
       for (let key in answers) {
