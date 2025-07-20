@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pengenalan Software</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .card {
+      perspective: 1000px;
+    }
+    .card-inner {
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+    }
+    .card:hover .card-inner {
+      transform: rotateY(180deg);
+    }
+    .card-front,
+    .card-back {
+      backface-visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 1rem;
+      border-radius: 1rem;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .card-back {
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigasi -->
+  <nav class="bg-blue-700 text-white p-4 shadow-md">
+    <div class="container mx-auto flex justify-between">
+      <span class="font-bold text-xl">E-Learning Software</span>
+      <div class="space-x-4">
+        <a href="#materi" class="hover:underline">Materi</a>
+        <a href="#flashcard" class="hover:underline">Flashcard</a>
+        <a href="#kuis" class="hover:underline">Kuis</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Materi -->
+  <section id="materi" class="p-6 max-w-6xl mx-auto mt-6">
+    <h2 class="text-2xl font-bold mb-4">Apa itu Software?</h2>
+    <p class="mb-4">Software adalah kumpulan instruksi atau program yang digunakan untuk mengoperasikan komputer dan menjalankan tugas-tugas spesifik.</p>
+
+    <div class="grid md:grid-cols-2 gap-4 mb-6">
+      <div>
+        <h3 class="font-semibold mb-2">Contoh Software Aplikasi:</h3>
+        <ul class="list-disc ml-5">
+          <li>Microsoft Word</li>
+          <li>Adobe Photoshop</li>
+          <li>Google Chrome</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Contoh Software Sistem:</h3>
+        <ul class="list-disc ml-5">
+          <li>Windows 10</li>
+          <li>Linux Ubuntu</li>
+          <li>macOS</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="font-semibold mb-2">Fungsi utama software sistem adalah?</h3>
+        <ul class="list-disc ml-5">
+          <li>Menggambar</li>
+          <li>Menjalankan komputer dan perangkat keras</li>
+          <li>Menonton video</li>
+        </ul>
+      </div>
+    </div>
+    <h3 class="font-semibold mb-2">Sistem operasi termasuk dalam jenis software?</h3>
+        <ul class="list-disc ml-5">
+          <li>Aplikasi</li>
+          <li>Game</li>
+          <li>Sistem</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="font-semibold mb-2">Contoh Software Sistem:</h3>
+        <ul class="list-disc ml-5">
+          <li>Windows 10</li>
+          <li>Linux Ubuntu</li>
+          <li>macOS</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Kumpulan Video dalam Kotak -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="font-semibold mb-2">Video 1: Pengertian Software</h3>
+        <iframe class="w-full rounded" height="220" src="https://www.youtube.com/embed/7vrlTuffk9w" title="Pengertian Software" allowfullscreen></iframe>
+      </div>
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="font-semibold mb-2">Video 2: Software Aplikasi</h3>
+        <iframe class="w-full rounded" height="220" src="https://www.youtube.com/embed/N34JPhZxAXA" title="Software Aplikasi" allowfullscreen></iframe>
+      </div>
+      <div class="bg-white rounded shadow p-4">
+        <h3 class="font-semibold mb-2">Video 3: Software Sistem Operasi</h3>
+        <iframe class="w-full rounded" height="220" src="https://www.youtube.com/embed/buvS0_Z2Do8" title="Software Sistem Operasi" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Flashcard -->
+  <section id="flashcard" class="bg-white py-10 mt-10">
+    <h2 class="text-2xl font-bold text-center mb-6">Flashcard Interaktif</h2>
+    <div class="flex justify-center gap-6 flex-wrap">
+
+      <div class="card w-64 h-40 relative">
+        <div class="card-inner w-full h-full relative">
+          <div class="card-front flex items-center justify-center text-center">
+            <p class="font-semibold">Apa itu Software Aplikasi?</p>
+          </div>
+          <div class="card-back flex items-center justify-center text-center text-sm">
+            <p>Software yang membantu pengguna melakukan tugas tertentu, seperti Word atau Excel.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="card w-64 h-40 relative">
+        <div class="card-inner w-full h-full relative">
+          <div class="card-front flex items-center justify-center text-center">
+            <p class="font-semibold">Contoh Software Sistem?</p>
+          </div>
+          <div class="card-back flex items-center justify-center text-center text-sm">
+            <p>Windows, Linux, dan macOS.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kuis -->
+  <section id="kuis" class="max-w-2xl mx-auto p-6 mt-10 bg-white shadow rounded">
+    <h2 class="text-2xl font-bold mb-4">Kuis Singkat</h2>
+    <form id="quizForm" class="space-y-6">
+      <div>
+        <label class="block font-semibold mb-1">1. Software yang digunakan untuk mengetik dokumen adalah?</label>
+        <div class="space-y-1">
+          <label><input type="radio" name="q1" value="a" /> a. Adobe Photoshop</label><br />
+          <label><input type="radio" name="q1" value="b" /> b. Microsoft Word</label><br />
+          <label><input type="radio" name="q1" value="c" /> c. Google Chrome</label>
+        </div>
+      </div>
+
+      <div>
+        <label class="block font-semibold mb-1">2. Sistem operasi termasuk dalam jenis software?</label>
+        <div class="space-y-1">
+          <label><input type="radio" name="q2" value="a" /> a. Aplikasi</label><br />
+          <label><input type="radio" name="q2" value="b" /> b. Game</label><br />
+          <label><input type="radio" name="q2" value="c" /> c. Sistem</label>
+        </div>
+      </div>
+
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded">Cek Jawaban</button>
+    </form>
+
+    <div id="result" class="mt-4 font-semibold text-green-700 hidden"></div>
+  </section>
+
+  <script>
+    document.getElementById("quizForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const answers = {
+        q1: "b",
+        q2: "c"
+        q3: "b",
+        q4: "c"
+      };
+      let score = 0;
+      for (let key in answers) {
+        const selected = document.querySelector(`input[name="${key}"]:checked`);
+        if (selected && selected.value === answers[key]) {
+          score++;
+        }
+      }
+      const resultDiv = document.getElementById("result");
+      resultDiv.textContent = `Skor Anda: ${score} dari ${Object.keys(answers).length}`;
+      resultDiv.classList.remove("hidden");
+    });
+  </script>
+
+</body>
+</html>
